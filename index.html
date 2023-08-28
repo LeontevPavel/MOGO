@@ -8,7 +8,8 @@
     <title>MOGO</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0d5a1570-598f-4e4a-8f33-2319092a05d5&lang=ru_RU">
+    </script>
 </head>
 
 <body>
@@ -18,28 +19,28 @@
                 <div class="logo"> MoGo </div>
                 <ul class="nav-top">
                     <li class="nav-item">
-                        <a href="" class="nav-link nav-link__active">about</a>
+                        <a href="#about" class="nav-link nav-link__active">about</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link nav-link__active">service</a>
+                        <a href="#service" class="nav-link nav-link__active">service</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link nav-link__active">work</a>
+                        <a href="#gallery" class="nav-link nav-link__active">work</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link nav-link__active">blog</a>
+                        <a href="#blog" class="nav-link nav-link__active">blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link nav-link__active">contact</a>
+                        <a href="#contact" class="nav-link nav-link__active">contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <img src="img/SHOPPING CART.png" alt="shopping cart" class="nav-cart">
+                        <a href="" class="nav-link nav-icon nav-cart">
+                            <span class="text-hidden">shopping cart</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <img src="img/MAGNIFYING GLASS.png" alt="image magnifying glass" class="nav-cart">
+                        <a href="" class="nav-link nav-icon nav-search ">
+                            <span class="text-hidden">search</span>
                         </a>
 
                     </li>
@@ -77,7 +78,7 @@
             </ul>
         </header>
 
-        <section class="about container">
+        <section class="about container" id="about">
             <h3 class="title-section">What we do</h3>
             <h4 class="subtitle-section">story about us</h4>
             <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -103,7 +104,7 @@
         </section>
 
         <div class="about-bottom">
-            <ul class="about-tatistics container">
+            <ul class="about-statistics container">
                 <li class="about-statistics-item">
                     <span class="about-statistics-number">42</span>
                     <span class="about-statistics-text">web design projects</span>
@@ -179,19 +180,712 @@
                     </div>
                 </li>
             </ul>
-
         </section>
 
         <section class="design">
             <h3 class="title-section">For all devices</h3>
             <h4 class="subtitle-section">unique design</h4>
-            <img src="/img/Feature_2.jpg.png" alt="tablet" class="design-image">
+            <img src="/img/Feature_2.jpg.png" alt="tablet" class="design-image-tablet">
+            <img src="/img/Feature_3.jpg.png" alt="smartphone" class="design-image-fone">
+        </section>
+
+        <section class="service container" id="service">
+            <h3 class="title-section">Service</h3>
+            <h4 class="subtitle-section">what we do</h4>
+            <div class="service-kontent">
+                <img src="/img/Service.jpg" alt="a man attaches a photo" class="service-content-image">
+                <ul class="service-content-list">
+                    <li class="service-content-item">
+                        <input type="radio" name="info" id="radio1" checked="checked" class="service-content-radio">
+                        <div class="service-content-top">
+                            <img src="/img/Services2_PICTURE.png" alt="pictogramma photo" class="service-content-pict">
+                            <div class="service-content-label-container">
+                                <label for="radio1" class="service-content-label">photografy</label>
+                            </div>
+                        </div>
+                        <p class="service-content-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        </p>
+                    </li>
+                    <li class="service-content-item">
+                        <input type="radio" name="info" id="radio2" class="service-content-radio">
+                        <div class="service-content-top">
+                            <img src="/img/Services2_EQUALIZER.png" alt="pictogramma photo"
+                                class="service-content-pict">
+                            <div class="service-content-label-container">
+                                <label for="radio2" class="service-content-label">creativity</label>
+                            </div>
+                        </div>
+                        <p class="service-content-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </li>
+                    <li class="service-content-item">
+                        <input type="radio" name="info" id="radio3" class="service-content-radio">
+                        <div class="service-content-top">
+                            <img src="/img/Services2_BULLSEYE.png" alt="pictogramma photo" class="service-content-pict">
+                            <div class="service-content-label-container">
+                                <label for="radio3" class="service-content-label">creativity</label>
+                            </div>
+                        </div>
+                        <p class="service-content-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="section-comment">
+            <div class="section-comment-content container">
+                <a href="" class="section-comment-prev">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        transform="rotate(180)">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M9 20L17 12L9 4" stroke="#cccccc" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </a>
+                <img src="/img/Services2_SPEECH 4.png" alt="picture messages" class="section-comment-img">
+                <p class="section-comment-text">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                    <span class="section-comment-nickname">Jon Doe</span>
+                </p>
+                <a href="" class="section-comment-prev">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        transform="rotate(0)">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M9 20L17 12L9 4" stroke="#cccccc" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="team container">
+            <h3 class="title-section">Who we are</h3>
+            <h4 class="subtitle-section">meet our team</h4>
+            <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="team-cards">
+                <div class="team-card">
+                    <div class="team-container-img">
+                        <img src="/img/Team_1.jpg" alt="" class="team-card-img">
+                        <ul class="team-card-social">
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" fill="" width="30px" height="30px"
+                                        viewBox="0 0 25 25" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.486 4.771c-4.23 0-6.363 3.033-6.363 5.562 0 1.533.581 2.894 1.823 3.401.205.084.387.004.446-.221l.182-.717c.061-.221.037-.3-.127-.495-.359-.422-.588-.972-.588-1.747 0-2.25 1.683-4.264 4.384-4.264 2.392 0 3.706 1.463 3.706 3.412 0 2.568-1.137 4.734-2.824 4.734-.932 0-1.629-.77-1.405-1.715.268-1.13.786-2.347.786-3.16 0-.729-.392-1.336-1.2-1.336-.952 0-1.718.984-1.718 2.304 0 .841.286 1.409.286 1.409l-1.146 4.852c-.34 1.44-.051 3.206-.025 3.385.013.104.149.131.21.051.088-.115 1.223-1.517 1.607-2.915.111-.396.627-2.445.627-2.445.311.589 1.213 1.108 2.175 1.108 2.863 0 4.804-2.608 4.804-6.103-.003-2.64-2.24-5.1-5.64-5.1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" width="25px" height="25px" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.4493 5.94799C23.6161 5.40154 23.4493 5 22.6553 5H20.0297C19.3621 5 19.0543 5.34687 18.8874 5.72936C18.8874 5.72936 17.5521 8.92607 15.6606 11.0025C15.0487 11.6036 14.7705 11.7949 14.4367 11.7949C14.2698 11.7949 14.0194 11.6036 14.0194 11.0572V5.94799C14.0194 5.29225 13.8345 5 13.2781 5H9.15213C8.73494 5 8.48403 5.30434 8.48403 5.59278C8.48403 6.21441 9.42974 6.35777 9.52722 8.10641V11.9042C9.52722 12.7368 9.37413 12.8878 9.04032 12.8878C8.15023 12.8878 5.98507 9.67682 4.70093 6.00261C4.44927 5.28847 4.19686 5 3.52583 5H0.900218C0.150044 5 0 5.34687 0 5.72936C0 6.41244 0.890141 9.80039 4.14464 14.2812C6.31429 17.3412 9.37118 19 12.1528 19C13.8218 19 14.0283 18.6316 14.0283 17.997V15.6842C14.0283 14.9474 14.1864 14.8003 14.7149 14.8003C15.1043 14.8003 15.7719 14.9916 17.3296 16.467C19.1099 18.2156 19.4034 19 20.4047 19H23.0304C23.7805 19 24.1556 18.6316 23.9392 17.9045C23.7024 17.1799 22.8525 16.1286 21.7247 14.8823C21.1127 14.1719 20.1947 13.4069 19.9165 13.0243C19.5271 12.5326 19.6384 12.314 19.9165 11.8769C19.9165 11.8769 23.1155 7.45067 23.4493 5.94799Z"
+                                            fill="" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" fill="" width="25px" height="25px"
+                                        viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="team-card-name">matthew dix</span>
+                    <span class="team-card-profession">Graphic Design</span>
+                </div>
+                <div class="team-card">
+                    <div class="team-container-img">
+                        <img src="/img/Team_2.jpg" alt="" class="team-card-img">
+                        <ul class="team-card-social">
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" fill="" width="30px" height="30px"
+                                        viewBox="0 0 25 25" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.486 4.771c-4.23 0-6.363 3.033-6.363 5.562 0 1.533.581 2.894 1.823 3.401.205.084.387.004.446-.221l.182-.717c.061-.221.037-.3-.127-.495-.359-.422-.588-.972-.588-1.747 0-2.25 1.683-4.264 4.384-4.264 2.392 0 3.706 1.463 3.706 3.412 0 2.568-1.137 4.734-2.824 4.734-.932 0-1.629-.77-1.405-1.715.268-1.13.786-2.347.786-3.16 0-.729-.392-1.336-1.2-1.336-.952 0-1.718.984-1.718 2.304 0 .841.286 1.409.286 1.409l-1.146 4.852c-.34 1.44-.051 3.206-.025 3.385.013.104.149.131.21.051.088-.115 1.223-1.517 1.607-2.915.111-.396.627-2.445.627-2.445.311.589 1.213 1.108 2.175 1.108 2.863 0 4.804-2.608 4.804-6.103-.003-2.64-2.24-5.1-5.64-5.1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" width="25px" height="25px" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.4493 5.94799C23.6161 5.40154 23.4493 5 22.6553 5H20.0297C19.3621 5 19.0543 5.34687 18.8874 5.72936C18.8874 5.72936 17.5521 8.92607 15.6606 11.0025C15.0487 11.6036 14.7705 11.7949 14.4367 11.7949C14.2698 11.7949 14.0194 11.6036 14.0194 11.0572V5.94799C14.0194 5.29225 13.8345 5 13.2781 5H9.15213C8.73494 5 8.48403 5.30434 8.48403 5.59278C8.48403 6.21441 9.42974 6.35777 9.52722 8.10641V11.9042C9.52722 12.7368 9.37413 12.8878 9.04032 12.8878C8.15023 12.8878 5.98507 9.67682 4.70093 6.00261C4.44927 5.28847 4.19686 5 3.52583 5H0.900218C0.150044 5 0 5.34687 0 5.72936C0 6.41244 0.890141 9.80039 4.14464 14.2812C6.31429 17.3412 9.37118 19 12.1528 19C13.8218 19 14.0283 18.6316 14.0283 17.997V15.6842C14.0283 14.9474 14.1864 14.8003 14.7149 14.8003C15.1043 14.8003 15.7719 14.9916 17.3296 16.467C19.1099 18.2156 19.4034 19 20.4047 19H23.0304C23.7805 19 24.1556 18.6316 23.9392 17.9045C23.7024 17.1799 22.8525 16.1286 21.7247 14.8823C21.1127 14.1719 20.1947 13.4069 19.9165 13.0243C19.5271 12.5326 19.6384 12.314 19.9165 11.8769C19.9165 11.8769 23.1155 7.45067 23.4493 5.94799Z"
+                                            fill="" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" fill="" width="25px" height="25px"
+                                        viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="team-card-name">christopher campbell</span>
+                    <span class="team-card-profession">Branding/UX design</span>
+                </div>
+                <div class="team-card">
+                    <div class="team-container-img">
+                        <img src="/img/Team_3.jpg" alt="" class="team-card-img">
+                        <ul class="team-card-social">
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" fill="" width="30px" height="30px"
+                                        viewBox="0 0 25 25" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.486 4.771c-4.23 0-6.363 3.033-6.363 5.562 0 1.533.581 2.894 1.823 3.401.205.084.387.004.446-.221l.182-.717c.061-.221.037-.3-.127-.495-.359-.422-.588-.972-.588-1.747 0-2.25 1.683-4.264 4.384-4.264 2.392 0 3.706 1.463 3.706 3.412 0 2.568-1.137 4.734-2.824 4.734-.932 0-1.629-.77-1.405-1.715.268-1.13.786-2.347.786-3.16 0-.729-.392-1.336-1.2-1.336-.952 0-1.718.984-1.718 2.304 0 .841.286 1.409.286 1.409l-1.146 4.852c-.34 1.44-.051 3.206-.025 3.385.013.104.149.131.21.051.088-.115 1.223-1.517 1.607-2.915.111-.396.627-2.445.627-2.445.311.589 1.213 1.108 2.175 1.108 2.863 0 4.804-2.608 4.804-6.103-.003-2.64-2.24-5.1-5.64-5.1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" width="25px" height="25px" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.4493 5.94799C23.6161 5.40154 23.4493 5 22.6553 5H20.0297C19.3621 5 19.0543 5.34687 18.8874 5.72936C18.8874 5.72936 17.5521 8.92607 15.6606 11.0025C15.0487 11.6036 14.7705 11.7949 14.4367 11.7949C14.2698 11.7949 14.0194 11.6036 14.0194 11.0572V5.94799C14.0194 5.29225 13.8345 5 13.2781 5H9.15213C8.73494 5 8.48403 5.30434 8.48403 5.59278C8.48403 6.21441 9.42974 6.35777 9.52722 8.10641V11.9042C9.52722 12.7368 9.37413 12.8878 9.04032 12.8878C8.15023 12.8878 5.98507 9.67682 4.70093 6.00261C4.44927 5.28847 4.19686 5 3.52583 5H0.900218C0.150044 5 0 5.34687 0 5.72936C0 6.41244 0.890141 9.80039 4.14464 14.2812C6.31429 17.3412 9.37118 19 12.1528 19C13.8218 19 14.0283 18.6316 14.0283 17.997V15.6842C14.0283 14.9474 14.1864 14.8003 14.7149 14.8003C15.1043 14.8003 15.7719 14.9916 17.3296 16.467C19.1099 18.2156 19.4034 19 20.4047 19H23.0304C23.7805 19 24.1556 18.6316 23.9392 17.9045C23.7024 17.1799 22.8525 16.1286 21.7247 14.8823C21.1127 14.1719 20.1947 13.4069 19.9165 13.0243C19.5271 12.5326 19.6384 12.314 19.9165 11.8769C19.9165 11.8769 23.1155 7.45067 23.4493 5.94799Z"
+                                            fill="" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-card-social-item">
+                                <a href="##" class="team-card-link">
+                                    <svg class="team-card-social-icon" fill="" width="25px" height="25px"
+                                        viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="team-card-name">michael fertig</span>
+                    <span class="team-card-profession">Developer</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="team-footer">
+            <div class="team-footer-contant container">
+                <img src="/img/team logo.png" alt="logos" class="team-footer-img">
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="gallery-title container">
+                <h3 class="title-section">What we do</h3>
+                <h4 class="subtitle-section">some of our work</h4>
+                <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <div class="gallery-item-description">
+                        <img src="/img/PICTURE.png" alt="" class="gallery-item-description-icon">
+                        <h5 class="gallery-item-title">
+                            creatively designed
+                        </h5>
+                        <p class="gallery-item-text">
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
+                    <img src="/img/Our_work.jpg" alt="photo of a man" class="gallery-item-img">
+                </li>
+                <li class="gallery-item">
+                    <div class="gallery-item-description">
+                        <img src="/img/PICTURE.png" alt="" class="gallery-item-description-icon">
+                        <h5 class="gallery-item-title">
+                            creatively designed
+                        </h5>
+                        <p class="gallery-item-text">
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
+                    <img src="/img/Our_work_2.jpg" alt="photo of the building" class="gallery-item-img">
+                </li>
+                <li class="gallery-item">
+                    <div class="gallery-item-description">
+                        <img src="/img/PICTURE.png" alt="" class="gallery-item-description-icon">
+                        <h5 class="gallery-item-title">
+                            creatively designed
+                        </h5>
+                        <p class="gallery-item-text">
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
+                    <img src="/img/Our_work_3.jpg" alt="photo of a jellyfish" class="gallery-item-img">
+                </li>
+                <li class="gallery-item">
+                    <div class="gallery-item-description">
+                        <img src="/img/PICTURE.png" alt="" class="gallery-item-description-icon">
+                        <h5 class="gallery-item-title">
+                            creatively designed
+                        </h5>
+                        <p class="gallery-item-text">
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
+
+                    <img src="/img/Our_work_4.jpg" alt="photo of the glass dome" class="gallery-item-img">
+                </li>
+                <li class="gallery-item">
+                    <div class="gallery-item-description">
+                        <img src="/img/PICTURE.png" alt="" class="gallery-item-description-icon">
+                        <h5 class="gallery-item-title">
+                            creatively designed
+                        </h5>
+                        <p class="gallery-item-text">
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
+                    <img src="/img/Our_work_5.jpg" alt="photo of the suspension bridge" class="gallery-item-img">
+                </li>
+                <li class="gallery-item">
+                    <div class="gallery-item-description">
+                        <img src="/img/PICTURE.png" alt="" class="gallery-item-description-icon">
+                        <h5 class="gallery-item-title">
+                            creatively designed
+                        </h5>
+                        <p class="gallery-item-text">
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
+                    <img src="/img/Our_work_6.jpg" alt="" class="gallery-item-img">
+                </li>
+                <li class="gallery-item">
+                    <div class="gallery-item-description">
+                        <img src="/img/PICTURE.png" alt="" class="gallery-item-description-icon">
+                        <h5 class="gallery-item-title">
+                            creatively designed
+                        </h5>
+                        <p class="gallery-item-text">
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
+                    <img src="/img/Our_work_7.jpg" alt="" class="gallery-item-img">
+                </li>
+            </ul>
+        </section>
+
+        <section class="comment-gallery container">
+            <div class="section-comment-content">
+                <a href="" class="section-comment-prev">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        transform="rotate(180)">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M9 20L17 12L9 4" stroke="#cccccc" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </a>
+                <img src="/img/Our_work_Ellipse.jpg" alt="photo of a man" class="section-comment-avatar">
+                <p class="section-comment-text">
+                    “2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                    <span class="section-comment-nickname">Joshua Earle</span>
+                </p>
+                <a href="" class="section-comment-prev">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        transform="rotate(0)">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M9 20L17 12L9 4" stroke="#cccccc" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="blog-feedback">
+            <div class="blog-feedback-content container">
+                <h3 class="title-section">Happy Clients</h3>
+                <h4 class="subtitle-section">what people say</h4>
+                <ul class="blog-feedback-list">
+                    <li class="blog-feedback-item">
+                        <div class="blog-feedback-card">
+                            <img src="./img/Feedback_Ellipse1.jpg" alt="photo of the author" class="blog-feedback-img">
+                            <div class="blog-feedback-card-content">
+                                <h5 class="blog-feedback-card-title">
+                                    matthew dix
+                                </h5>
+                                <h6 class="blog-feedback-card-subtitle">
+                                    Graphic Design
+                                </h6>
+                                <p class="blog-feedback--card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="blog-feedback-item">
+                        <div class="blog-feedback-card">
+                            <img src="./img/Feedback_Ellipse_2.jpg" alt="photo of the author" class="blog-feedback-img">
+                            <div class="blog-feedback-card-content">
+                                <h5 class="blog-feedback-card-title">
+                                    nick karvounis
+                                </h5>
+                                <h6 class="blog-feedback-card-subtitle">
+                                    Graphic design
+                                </h6>
+                                <p class="blog-feedback--card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="blog-feedback-item">
+                        <div class="blog-feedback-card">
+                            <img src="./img/Feedback_Ellipse_3.jpg" alt="photo of the author" class="blog-feedback-img">
+                            <div class="blog-feedback-card-content">
+                                <h5 class="blog-feedback-card-title">
+                                    jaelynn castillo
+                                </h5>
+                                <h6 class="blog-feedback-card-subtitle">
+                                    Graphic design
+                                </h6>
+                                <p class="blog-feedback--card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="blog-feedback-item">
+                        <div class="blog-feedback-card">
+                            <img src="./img/Feedback_Ellipse_4.jpg" alt="photo of the author" class="blog-feedback-img">
+                            <div class="blog-feedback-card-content">
+                                <h5 class="blog-feedback-card-title">
+                                    mike petrucci
+                                </h5>
+                                <h6 class="blog-feedback-card-subtitle">
+                                    Graphic design
+                                </h6>
+                                <p class="blog-feedback--card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="blog-stories container" id="blog">
+            <h3 class="title-section">Our stories</h3>
+            <h4 class="subtitle-section">latest blog</h4>
+            <ul class="blog-stories-list">
+                <li class="blog-stories-item">
+                    <a href="#" class="blog-stories-list-link">
+                        <img src="/img/Stories_1.jpg" alt="" class="blog-stories-item-img">
+                        <div class="blog-stories-item-data">
+                            <span class="blog-stories-item-day">15</span>
+                            <span class="blog-stories-item-month">Jan</span>
+                        </div>
+                        <h5 class="blog-stories-item-title">
+                            Lorem ipsum dolor sit amet
+                        </h5>
+                        <p class="blog-stories-item-text">
+                            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                    </a>
+                    <div class="blog-stories-item-footer">
+                        <a href="#" class="blog-stories-footer-link">
+                            <span class="blog-stories-footer-views">
+                                542
+                            </span>
+                        </a>
+                        <a href="#" class="blog-stories-footer-link">
+                            <span class="blog-stories-footer-comment">
+                                17
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li class="blog-stories-item">
+                    <a href="#" class="blog-stories-list-link">
+                        <img src="/img/Stories_2.jpg" alt="" class="blog-stories-item-img">
+                        <div class="blog-stories-item-data">
+                            <span class="blog-stories-item-day">14</span>
+                            <span class="blog-stories-item-month">Jan</span>
+                        </div>
+                        <h5 class="blog-stories-item-title">
+                            sed do eiusmod tempor
+                        </h5>
+                        <p class="blog-stories-item-text">
+                            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </a>
+                    <div class="blog-stories-item-footer">
+                        <a href="#" class="blog-stories-footer-link">
+                            <span class="blog-stories-footer-views">
+                                992
+                            </span>
+                        </a>
+                        <a href="#" class="blog-stories-footer-link">
+                            <span class="blog-stories-footer-comment">
+                                42
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li class="blog-stories-item">
+                    <a href="#" class="blog-stories-list-link">
+                        <img src="/img/Stories_3.jpg" alt="" class="blog-stories-item-img">
+                        <div class="blog-stories-item-data">
+                            <span class="blog-stories-item-day">12</span>
+                            <span class="blog-stories-item-month">Jan</span>
+                        </div>
+                        <h5 class="blog-stories-item-title">
+                            incididunt ut labore et dolore
+                        </h5>
+                        <p class="blog-stories-item-text">
+                            Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </a>
+                    <div class="blog-stories-item-footer">
+                        <a href="#" class="blog-stories-footer-link">
+                            <span class="blog-stories-footer-views">
+                                1560
+                            </span>
+                        </a>
+                        <a href="#" class="blog-stories-footer-link">
+                            <span class="blog-stories-footer-comment">
+                                98
+                            </span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </section>
 
 
+        <section class="map" id="contact">
+            <h4 class="subtitle-section">open map</h4>
+            <div class="map-content" id="map"></div>
+        </section>
+
+        <footer class="footer container">
+            <div class="footer-social">
+
+                <div class="footer-subscription">
+                    <h3 class="footer-subscription-title">MoGo</h3>
+                    <p class="footer-subscription-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsa tenetur cum, magnam,
+                        perspiciatis saepe accusantium laudantium labore ipsum deserunt quibusdam repellendus sit sint
+                        pariatur quidem iste nam nesciunt praesentium.
+                    </p>
+                    <span class="footer-subscription-count"> 15k</span>
+                    <span class="footer-subscription-followers">followers</span>
+
+                    <div class="footer-social-icons">
+                        <span class="footer-social-icons-title">Follow Us:</span>
+                        <a href="#0" class="footer-social-link">
+                            <svg class="footer-social-icon telegram" viewBox="4 0 30 30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z" />
+                            </svg>
+                        </a>
+                        <a href="#0" class="footer-social-link">
+                            <svg class="footer-social-icon vk" viewBox="2 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23.4493 5.94799C23.6161 5.40154 23.4493 5 22.6553 5H20.0297C19.3621 5 19.0543 5.34687 18.8874 5.72936C18.8874 5.72936 17.5521 8.92607 15.6606 11.0025C15.0487 11.6036 14.7705 11.7949 14.4367 11.7949C14.2698 11.7949 14.0194 11.6036 14.0194 11.0572V5.94799C14.0194 5.29225 13.8345 5 13.2781 5H9.15213C8.73494 5 8.48403 5.30434 8.48403 5.59278C8.48403 6.21441 9.42974 6.35777 9.52722 8.10641V11.9042C9.52722 12.7368 9.37413 12.8878 9.04032 12.8878C8.15023 12.8878 5.98507 9.67682 4.70093 6.00261C4.44927 5.28847 4.19686 5 3.52583 5H0.900218C0.150044 5 0 5.34687 0 5.72936C0 6.41244 0.890141 9.80039 4.14464 14.2812C6.31429 17.3412 9.37118 19 12.1528 19C13.8218 19 14.0283 18.6316 14.0283 17.997V15.6842C14.0283 14.9474 14.1864 14.8003 14.7149 14.8003C15.1043 14.8003 15.7719 14.9916 17.3296 16.467C19.1099 18.2156 19.4034 19 20.4047 19H23.0304C23.7805 19 24.1556 18.6316 23.9392 17.9045C23.7024 17.1799 22.8525 16.1286 21.7247 14.8823C21.1127 14.1719 20.1947 13.4069 19.9165 13.0243C19.5271 12.5326 19.6384 12.314 19.9165 11.8769C19.9165 11.8769 23.1155 7.45067 23.4493 5.94799Z" />
+                            </svg>
+                        </a>
+                        <a href="#0" class="footer-social-link">
+                            <svg class="footer-social-icon pinterest" viewBox="5 3 16 16" version="1.2"
+                                baseProfile="tiny" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.486 4.771c-4.23 0-6.363 3.033-6.363 5.562 0 1.533.581 2.894 1.823 3.401.205.084.387.004.446-.221l.182-.717c.061-.221.037-.3-.127-.495-.359-.422-.588-.972-.588-1.747 0-2.25 1.683-4.264 4.384-4.264 2.392 0 3.706 1.463 3.706 3.412 0 2.568-1.137 4.734-2.824 4.734-.932 0-1.629-.77-1.405-1.715.268-1.13.786-2.347.786-3.16 0-.729-.392-1.336-1.2-1.336-.952 0-1.718.984-1.718 2.304 0 .841.286 1.409.286 1.409l-1.146 4.852c-.34 1.44-.051 3.206-.025 3.385.013.104.149.131.21.051.088-.115 1.223-1.517 1.607-2.915.111-.396.627-2.445.627-2.445.311.589 1.213 1.108 2.175 1.108 2.863 0 4.804-2.608 4.804-6.103-.003-2.64-2.24-5.1-5.64-5.1z" />
+                            </svg>
+                        </a>
+                        <a href="#0" class="footer-social-link">
+                            <svg class="footer-social-icon tumblr" viewBox="0 0 20 20" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                transform="rotate(0)">
+                                <g id="Dribbble-Light-Preview" transform="translate(-184.000000, -7399.000000)">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M139.00148,7254.975 L140,7257.827 C139.622944,7258.358 137.91209,7258.973 136.376708,7258.998 C131.82592,7259.073 130.088955,7255.895 130.088955,7253.657 L130.088955,7247 L128,7247 L128,7244.539 C131.169989,7243.445 131.931413,7240.708 132.110018,7239.149 C132.122552,7239.042 132.210288,7239 132.261467,7239 L135.311341,7239 L135.311341,7244 L139.489251,7244 L139.489251,7247 L135.311341,7247 L135.311341,7253.349 C135.311341,7254.195 135.646619,7255.363 137.318827,7255.32 C137.873444,7255.307 138.612934,7255.152 139.00148,7254.975"
+                                            id="tumblr-[#181]"> </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <form action="" class="footer-subscription-form" method="post">
+                        <label for="email" class="footer-subscroption-label">input your email</label>
+                        <input type="email" name="email" required class="footer-subscription-input">
+                        <button class="footer-subscription-button" type="submit">
+                            subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <div class="footer-blogs">
+                    <h3 class="footer-blogs-title">blogs</h3>
+                    <ul class="footer-blogs-cards">
+                        <li class="footer-blogs-card">
+                            <a href="#0" class="footer-blogs-card-link">
+                                <div class="footer-blogs-card-img">
+                                <img src="/img/Blogs_1.png" alt="foto" class="footer-blogs-img">
+                            </div>
+                            <div class="footer-blogs-card-content">
+                                <p class="footer-blogs-card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <time class="footer-blogs-card-time">Jan 9, 2016</time>
+                            </div>
+                            </a>                            
+                        </li>
+                        <li class="footer-blogs-card">
+                            <a href="#0" class="footer-blogs-card-link">
+                              <div class="footer-blogs-card-img">
+                                <img src="/img/Blogs_2.png" alt="foto" class="footer-blogs-img">
+                            </div>
+                            <div class="footer-blogs-card-content">
+                                <p class="footer-blogs-card-text">
+                                    Consectetur adipiscing elit,sed do eiusmod tempor
+                                </p>
+                                <time class="footer-blogs-card-time">Jan 9, 2016</time>
+                            </div>  
+                            </a>                            
+                        </li>
+                        <li class="footer-blogs-card">
+                          <a href="#0" class="footer-blogs-card-link">
+                            <div class="footer-blogs-card-img">
+                                <img src="/img/Blogs_3.png" alt="foto" class="footer-blogs-img">
+                            </div>
+                            <div class="footer-blogs-card-content">
+                                <p class="footer-blogs-card-text">
+                                    sed do eiusmod tempor incididunt ut labore
+                                </p>
+                                <time class="footer-blogs-card-time">Jan 9, 2016</time>
+                            </div>
+                          </a>                            
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-insta">
+                    <ul class="footer-insta-list">
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_1.jpg" alt="photo of mountains" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_2.jpg" alt="photo of mountains" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_3.jpg" alt="photo night city" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_4.jpg" alt="photo of mountains" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_5.jpg" alt="photo" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_6.jpg" alt="photo of mountains" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_7.jpg" alt="photo tunnel" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_8.jpg" alt="photo fir needles" class="footer-insta-img">
+                        </li>
+                        <li class="footer-insta-item">
+                            <img src="/img/Insta_9.jpg" alt="photo of seawater" class="footer-insta-img">
+                        </li>
+                    </ul>
+                    <a href="#0" class="footer-insta-link">View more photos</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span class="footer-bottom-text">© 2016 MoGo free PSD template by</span>
+                <span class="footer-bottom-author">Laaqiq</span>
+            </div>
+        </footer>
+
     </div>
 
-
+    <script src="script/script.js"></script>
 </body>
 
 </html>
