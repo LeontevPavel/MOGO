@@ -1,7 +1,7 @@
 /*-----Fonts------*/
 
 @font-face {
-    font-family: "montserrat";
+    font-family: montserrat;
     font-weight: 400;
     font-style: normal;
     src: url("/fonts/Montserrat/Montserrat-Regular.ttf")format('truetype');
@@ -71,7 +71,7 @@ body {
     max-width: 1920px;
     height: 100vh;
     margin: 0 auto;
-    /*background-color: #aaa;*/
+    background-color: #f8f8f8;
 }
 
 .container {
@@ -1181,23 +1181,10 @@ body {
 /* ---- Footer social ---- */
 
 .footer-social {
-    display: flex;
-    
+    display: flex;    
+    margin-bottom: 70px;
 }
 
-.footer-social-link {
-    margin-left: 8px;
-    text-decoration: none;
-    width: 16px;
-    height: 16px;
-}
-
-.footer-social-icon {
-    display: inline-block;
-    fill: #95e1d3;
-    width: 20px;
-    height: 15px;
-}
 
 /* ---- Footer subscription ---- */
 
@@ -1208,8 +1195,8 @@ body {
 
 .footer-subscription-title {
     margin: 0;
-    margin-bottom: 40px;
-    font-family: "montserrat";
+    margin-bottom: 25px;
+    font-family: "Montserrat";
     font-size: 46px;
     font-weight: 700;
     line-height: 1;
@@ -1218,16 +1205,114 @@ body {
 }
 
 .footer-subscription-text {
-    margin-bottom: 53px;
+    margin: 0;
+    margin-bottom: 30px;
     
 }
 
+.footer-subscription-count {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 16px;    
+}
+
+.footer-subscription-followers {
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #333333;
+    font-weight: 400;    
+    margin-bottom: 16px; 
+}
+
+.footer-social-icons {
+    width: 100%;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.footer-social-icons::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-bottom: 15px;
+}
+
+.footer-social-link {
+    margin-left: 8px;
+    text-decoration: none;
+    width: 16px;
+    height: 16px;
+    
+}
+
+.footer-social-icon {
+    display: inline-block;
+    fill: #95e1d3;
+    width: 20px;
+    height: 15px;
+}
+
+.footer-social-icon:hover {
+    fill: #7fd3c3;
+}
+
+.footer-subscription-form {
+    letter-spacing: -4px;
+}
+
+.footer-subscription-input {
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    font-family: inherit;
+    font-size: 15px;
+    height: 37px;
+    width: 228px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0;
+}
+
+.footer-subscription-input:focus-visible {
+    outline: none;
+    border: 2px solid #95e1d3;
+}
+
+.footer-subscription-button {
+    display: inline-block;
+    letter-spacing: 1px;
+    width: 150px;
+    height: 37px;
+    color: #fff;
+    background-color: #95e1d3;
+    border: 1px solid #95e1d3;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-subscription-button:hover {
+    color: #fff;
+    background-color: #7fd3c3;
+    border: 2px solid #7fd3c3;
+}
 
 /* ---- Footer blogs ---- */
 
 .footer-blogs {
-    width: 35%;
-    padding-right: 70px;
+    width: 34%;
+    padding-right: 65px;
 }
 
 .footer-blogs-title {
@@ -1241,6 +1326,7 @@ body {
 }
 
 .footer-blogs-cards {
+    margin: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -1253,6 +1339,10 @@ body {
 .footer-blogs-card-link {
     display: flex;
     text-decoration: none;  
+}
+
+.footer-blogs-card-link:hover .footer-blogs-card-text {
+    text-decoration: underline;
 }
 
 .footer-blogs-card {
@@ -1290,14 +1380,62 @@ body {
 /* ---- Footer insta ---- */
 
 .footer-insta {
-    width: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 23%;   
 }
 
+.footer-insta-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer-insta-item {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: calc(33% - 2px);
+    margin-right: 2px;
+    margin-bottom: 2px;    
+}
+
+.footer-insta-link {
+    display: block;
+}
+
+.footer-insta-img {
+    display: block;
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.footer-insta-link-more {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #a1a1a1;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Roboto";
+}
+
+.footer-insta-link-more:hover {
+    color: #333333;
+}
 
 /* ---- Footer bottom ---- */
 
 .footer-bottom {
     height: 60px;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    padding: 25px 0;
+    text-align: center;
 }
 
 .footer-bottom-text {
