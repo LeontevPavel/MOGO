@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOGO</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=0d5a1570-598f-4e4a-8f33-2319092a05d5&lang=ru_RU">
     </script>
 </head>
@@ -17,7 +17,7 @@
         <header class="header-wrap">
             <nav class="header-top container">
                 <div class="logo"> MoGo </div>
-                <input id="menu-toggle" type="checkbox"/>
+                <input id="menu-toggle" type="checkbox" />
                 <label class='menu-button-container' for="menu-toggle">
                     <div class='menu-button'></div>
                 </label>
@@ -48,7 +48,7 @@
                         </a>
 
                     </li>
-                </ul>                
+                </ul>
             </nav>
             <h2 class="header-subtitle container">Creative Template</h2>
             <h1 class="header-title container">welcome to mogo</h1>
@@ -188,9 +188,9 @@
 
         <section class="design">
             <h3 class="title-section">For all devices</h3>
-            <h4 class="subtitle-section">unique design</h4>       
+            <h4 class="subtitle-section">unique design</h4>
             <img src="/img/Feature_2.jpg.png" alt="tablet" class="design-image-tablet">
-            <img src="/img/Feature_3.jpg.png" alt="smartphone" class="design-image-fone">                    
+            <img src="/img/Feature_3.jpg.png" alt="smartphone" class="design-image-fone">
         </section>
 
         <section class="service container" id="service">
@@ -199,7 +199,7 @@
             <div class="service-content">
                 <div class="service-wrapper-img">
                     <img src="/img/Service.jpg" alt="a man attaches a photo" class="service-content-image">
-                </div>                
+                </div>
                 <ul class="service-content-list">
                     <li class="service-content-item">
                         <input type="radio" name="info" id="radio1" checked="checked" class="service-content-radio">
@@ -264,7 +264,7 @@
 
         <section class="section-comment">
             <div class="section-comment-content container">
-                <button class="section-comment-btn">
+                <button type="button" class="section-comment-btn btn-left ">
                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         transform="rotate(180)">
 
@@ -278,14 +278,37 @@
                         </g>
                     </svg>
                 </button>
-                <img src="/img/Services2_SPEECH 4.png" alt="picture messages" class="section-comment-img">
-                <p class="section-comment-text">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                    <span class="section-comment-nickname">Jon Doe</span>
-                </p>
-                <button class="section-comment-btn">
+                <div class="comment-box">
+                    <div class="comment-item item-active">
+                        <img src="/img/Services2_SPEECH 4.png" alt="picture messages" class="section-comment-img">
+                        <p class="section-comment-text">
+                            “Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                            <span class="section-comment-nickname">Jon Doe</span>
+                        </p>
+                    </div>
+                    <div class="comment-item">
+                        <img src="/img/Services2_SPEECH 4.png" alt="picture messages" class="section-comment-img">
+                        <p class="section-comment-text">
+                            “Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”
+                            <span class="section-comment-nickname">Maik Felow</span>
+                        </p>
+                    </div>
+                    <div class="comment-item">
+                        <img src="/img/Services2_SPEECH 4.png" alt="picture messages" class="section-comment-img">
+                        <p class="section-comment-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam.”
+                            <span class="section-comment-nickname">Jeff Bean</span>
+                        </p>
+
+                    </div>
+                </div>
+                <button type="button" class="section-comment-btn btn-right">
                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         transform="rotate(0)">
 
@@ -298,7 +321,7 @@
                                 stroke-linejoin="round" />
                         </g>
                     </svg>
-                </button>                
+                </button>
             </div>
         </section>
 
@@ -309,8 +332,8 @@
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div class="team-cards">
-                <div class="team-card">
+            <ul class="team-cards">
+                <li class="team-card">
                     <div class="team-container-img">
                         <img src="/img/Team_1.jpg" alt="" class="team-card-img">
                         <ul class="team-card-social">
@@ -347,8 +370,8 @@
                     </div>
                     <span class="team-card-name">matthew dix</span>
                     <span class="team-card-profession">Graphic Design</span>
-                </div>
-                <div class="team-card">
+                </li>
+                <li class="team-card">
                     <div class="team-container-img">
                         <img src="/img/Team_2.jpg" alt="" class="team-card-img">
                         <ul class="team-card-social">
@@ -385,8 +408,8 @@
                     </div>
                     <span class="team-card-name">christopher campbell</span>
                     <span class="team-card-profession">Branding/UX design</span>
-                </div>
-                <div class="team-card">
+                </li>
+                <li class="team-card">
                     <div class="team-container-img">
                         <img src="/img/Team_3.jpg" alt="" class="team-card-img">
                         <ul class="team-card-social">
@@ -423,14 +446,27 @@
                     </div>
                     <span class="team-card-name">michael fertig</span>
                     <span class="team-card-profession">Developer</span>
-                </div>
-            </div>
+                </li>
+            </ul>
 
         </section>
 
         <section class="team-footer">
             <div class="team-footer-contant container">
-                <img src="/img/team logo.png" alt="logos" class="team-footer-img">
+                <ul class="team-footer-list">
+                    <li class="team-footer-item"><img src="./img/icon_hipster.png" alt="emblem" class="team-footer-img">
+                    </li>
+                    <li class="team-footer-item"><img src="./img/icon_abcd.png" alt="emblem" class="team-footer-img">
+                    </li>
+                    <li class="team-footer-item"><img src="./img/icon_design.png" alt="emblem" class="team-footer-img">
+                    </li>
+                    <li class="team-footer-item"><img src="./img/icon_hipst.png" alt="emblem" class="team-footer-img">
+                    </li>
+                    <li class="team-footer-item"><img src="./img/icon_hips.png" alt="emblem" class="team-footer-img">
+                    </li>
+                    <li class="team-footer-item"><img src="./img/icon_studio.png" alt="emblem" class="team-footer-img">
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -534,7 +570,7 @@
 
         <section class="comment-gallery container">
             <div class="section-comment-content">
-                <a href="" class="section-comment-prev">
+                <button type="button" class="section-comment-btn btn-left- ">
                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         transform="rotate(180)">
 
@@ -547,16 +583,35 @@
                                 stroke-linejoin="round" />
                         </g>
                     </svg>
-                </a>
-                <img src="/img/Our_work_Ellipse.jpg" alt="photo of a man" class="section-comment-avatar">
-                <p class="section-comment-text">
-                    “2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                    <span class="section-comment-nickname">Joshua Earle</span>
-                </p>
-                <a href="" class="section-comment-prev">
+                </button>
+                <div class="comment-box">
+                    <div class="comment-item item-active">
+                        <img src="/img/Our_work_Ellipse.jpg" alt="foto author of the comment" class="section-comment-foto">
+                        <p class="section-comment-text">
+                            “Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                            <span class="section-comment-nickname">Mike Fox</span>
+                        </p>
+                    </div>
+                    <div class="comment-item">
+                        <img src="/img/jake-fagan-.png" alt="foto author of the comment" class="section-comment-foto">
+                        <p class="section-comment-text">
+                            “Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”
+                            <span class="section-comment-nickname">Jeff Bean</span>
+                        </p>
+                    </div>
+                    <div class="comment-item">
+                        <img src="/img/hugo-delauney.png" alt="foto author of the comment" class="section-comment-foto">
+                        <p class="section-comment-text">
+                            “Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”
+                            <span class="section-comment-nickname">Jon Terron</span>
+                        </p>
+
+                    </div>
+                </div>
+                <button type="button" class="section-comment-btn btn-right">
                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         transform="rotate(0)">
 
@@ -569,9 +624,8 @@
                                 stroke-linejoin="round" />
                         </g>
                     </svg>
-                </a>
-            </div>
-
+                </button>               
+            </div>           
         </section>
 
         <section class="blog-feedback">
