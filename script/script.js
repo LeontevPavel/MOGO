@@ -7,7 +7,7 @@ function init() {
 
     let myPlacemark = new ymaps.Placemark([56.84128073150723, 60.59787807040558], {}, {
         iconLayout: 'default#image',
-        iconImageHref: '/img/Map_PIN.png',
+        iconImageHref: '../img/Map_PIN.png',
         icon_imagesize: [40, 40],
         iconImageOffset: [-3, -42]
     });
