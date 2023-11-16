@@ -4,28 +4,28 @@
     font-family: montserrat;
     font-weight: 400;
     font-style: normal;
-    src: url("/fonts/Montserrat/Montserrat-Regular.ttf")format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf")format('truetype');
 }
 
 @font-face {
     font-family: montserrat;
     font-weight: 700;
     font-style: normal;
-    src: url("/fonts/Montserrat/Montserrat-Bold.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format('truetype');
 }
 
 @font-face {
     font-family: roboto;
     font-weight: 300;
     font-style: italic;
-    src: url('/fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: roboto;
     font-weight: 400;
     font-style: normal;
-    src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 
@@ -33,7 +33,7 @@
     font-family: kaushan;
     font-weight: 400;
     font-style: normal;
-    src: url("/fonts/Kaushan_Script/KaushanScript-Regular.ttf") format('truetype');
+    src: url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf') format('truetype');
 }
 
 
