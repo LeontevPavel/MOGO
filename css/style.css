@@ -18,8 +18,7 @@
     font-family: roboto;
     font-weight: 300;
     font-style: italic;
-    src: local ('Roboto-LightItalic'),
-        url('/fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+    src: url('/fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -1780,7 +1779,7 @@ body {
 /* ---- Blog-feedback ---- */
 
 .blog-feedback {
-    background-image: url('/img/What_people_say_back.jpg');
+    background-image: url('../img/What_people_say_back.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
