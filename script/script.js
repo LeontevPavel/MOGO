@@ -16,6 +16,19 @@ function init() {
 
 ymaps.ready(init);
 
+// --------- Скрытие бургер-меню ---------------//
+
+const navMenuItems = document.querySelectorAll ('.nav-link');
+const toggle = document.getElementById ('menu-toggle');
+
+[...navMenuItems].forEach(navMenuItem => {
+    navMenuItem.onclick = () => {
+        if (toggle.checked) {
+            toggle.checked = false; 
+        }    
+    }
+
+});
 
 // --------- Галерея комментариев ---------------//
 

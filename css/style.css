@@ -2198,6 +2198,12 @@ body {
     color: #cccccc;
 }
 
+@media (max-width: 640px) {
+    .footer-subscription-title {
+        font-size: 36px; 
+    }
+}
+
 .footer-subscription-text {
     margin: 0;
     margin-bottom: 30px;
@@ -2273,6 +2279,12 @@ body {
     border-radius: 0;
 }
 
+@media (max-width: 640px) {
+    .footer-subscription-input {
+        max-width: 220px;
+    }
+}
+
 .footer-subscription-input:focus-visible {
     outline: none;
     border: 2px solid #95e1d3;
@@ -2295,10 +2307,15 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 640px) {
+    .footer-subscription-button {
+        width: 140px;
+    }
+}
+
 .footer-subscription-button:hover {
     color: #fff;
     background-color: #7fd3c3;
-    border: 2px solid #7fd3c3;
 }
 
 /* ---- Footer blogs ---- */
